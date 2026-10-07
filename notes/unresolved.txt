@@ -2,10 +2,5 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | feedingfrosty.so
-MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | feedingfrosty.so
-MyMeritManager::Instance() | feedingfrosty.so
 USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | feedingfrosty.so
 USBIO::JoystickFound() | feedingfrosty.so
-MyMeritManager::PlayerLoaded() const | feedingfrosty.so
-MyMeritManager::Name() const | feedingfrosty.so
