@@ -2,55 +2,10 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-GetTouchCoord(int*, int*, int*) | feedingfrosty.so
-QueFlush(bool) | feedingfrosty.so
-WorldClass::FrameNumber(Bitmap*) | feedingfrosty.so
-WorldClass::RefreshArea(int, int, int, int) | feedingfrosty.so
-WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | feedingfrosty.so
-WorldClass::SetBack(Bitmap*, int) | feedingfrosty.so
-WorldClass::SetBack(char const*, int) | feedingfrosty.so
-WorldClass::DeleteBmp(Bitmap*, unsigned char) | feedingfrosty.so
-WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | feedingfrosty.so
-WorldClass::WorldClass() | feedingfrosty.so
-system_info::SystemInfo::GetInstance() | feedingfrosty.so
-system_info::SystemInfo::IsPlatformION() | feedingfrosty.so
 MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | feedingfrosty.so
 MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | feedingfrosty.so
 MyMeritManager::Instance() | feedingfrosty.so
-List::Push(Group*) | feedingfrosty.so
-List::Clear(unsigned char) | feedingfrosty.so
-List::IsEmpty() | feedingfrosty.so
-List::List(List*) | feedingfrosty.so
 USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | feedingfrosty.so
 USBIO::JoystickFound() | feedingfrosty.so
-Sprite::DoNextFrame() | feedingfrosty.so
-Sprite::AssignString(String*, unsigned long) | feedingfrosty.so
-Sprite::ChangeString(char const*, unsigned long) | feedingfrosty.so
-Sprite::ClicksEnabled | feedingfrosty.so
-Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | feedingfrosty.so
-Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | feedingfrosty.so
-Sprite::DoDraw() | feedingfrosty.so
-Sprite::Enable(unsigned long) | feedingfrosty.so
-Sprite::SetBmp(Bitmap*, unsigned long) | feedingfrosty.so
-Sprite::Signal(Group::SpriteSignalType) | feedingfrosty.so
-Sprite::Signal(SpriteSignal*) | feedingfrosty.so
-Sprite::Disable(unsigned long, bool) | feedingfrosty.so
-Sprite::FadeOut(unsigned long, unsigned long, int, int) | feedingfrosty.so
-Sprite::Message(Group::SpriteSignalType) | feedingfrosty.so
-Sprite::Message(SpriteSignal*) | feedingfrosty.so
-Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | feedingfrosty.so
-Sprite::SetCord(float, float, float, unsigned long) | feedingfrosty.so
-Sprite::SetSize(int, int) | feedingfrosty.so
-Sprite::SetAlpha(int, unsigned long) | feedingfrosty.so
-Sprite::ChangeBmp(Bitmap*, unsigned long) | feedingfrosty.so
-Sprite::DoCommand(int) | feedingfrosty.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | feedingfrosty.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | feedingfrosty.so
-Sprite::~Sprite() | feedingfrosty.so
-String::ChangeColor(int, int, int, unsigned char) | feedingfrosty.so
-String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | feedingfrosty.so
 MyMeritManager::PlayerLoaded() const | feedingfrosty.so
 MyMeritManager::Name() const | feedingfrosty.so
-typeinfo for Sprite | feedingfrosty.so
-vtable for DOSLinuxWorld | feedingfrosty.so
-position_mouse | feedingfrosty.so
